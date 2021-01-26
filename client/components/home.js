@@ -1,16 +1,14 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Head from './head'
+import LoginForm from './login'
 
 const Home = () => {
-  const [counter, setCounterNew] = useState(0)
+
 
   return (
     <div>
       <Head title="Hello" />
-      <button type="button" onClick={() => setCounterNew(counter + 1)}>
-        updateCounter
-      </button>
-      <div> Hello World Dashboard {counter} </div>
+      <LoginForm/>
     </div>
   )
 }
